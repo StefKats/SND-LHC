@@ -7,7 +7,7 @@ and a log-likelihood function is built to reconstruct energy and vertex.
 
 Steps to generate the results:
 
-1. Run the GEANT4 simulation for every depth and energy
+1. Run the GEANT4 simulation in run_simSND.py, for every depth and energy
 
 2. Run the PDF_python_code.py to use the GEANT4 simulation results and create a PDF for each SciFi station for every depth and energy
 
