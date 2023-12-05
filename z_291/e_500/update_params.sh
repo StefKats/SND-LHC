@@ -17,6 +17,12 @@ echo $Z
 
 #DIR_STRING="${SCRIPT_DIR}"
 
+
+sed -i "9s/.*/E=${E}/" "$SCRIPT_DIR/"runPG.sh
+
+sed -i "10s/.*/Z=${Z}/" "$SCRIPT_DIR/"runPG.sh
+
+
 sed -i "4s/.*/E=${E}/" "$SCRIPT_DIR/"pythonPDF.sh
 
 

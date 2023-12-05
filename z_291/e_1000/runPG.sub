@@ -10,7 +10,7 @@ should_transfer_files = NO
 on_exit_remove = (ExitBySignal == False) && (ExitCode == 0)
 max_retries    = 3
 
-+JobFlavour  = "workday"
++JobFlavour  = "microcentury"
 +AccountingGroup = "group_u_SNDLHC.users"
 requirements = Machine =!= LastRemoteHost
 queue 100

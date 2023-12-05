@@ -1,4 +1,4 @@
-executable = /afs/cern.ch/user/s/skatsaro/PGsim/z_291/e_200/pythonPDF.sh
+executable = /afs/cern.ch/user/s/skatsaro/PGsim2/z_291/e_200/pythonPDF.sh
 arguments  = $(ClusterID) $(ProcId)
 output     = output/pythonPDF.$(ClusterId).$(ProcId).out
 error      = error/pythonPDF.$(ClusterId).$(ProcId).err
