@@ -24,6 +24,11 @@ Steps to generate results:
 6. Run generate_energy_reco.sh again but with the last line uncommented to run the Energy_reco_code.py and obtain the log-likelihood 
 -->
 
+Steps taken by the scripts to prepare the results:
+
+1. All the depth dirs are created from make_depth_dirs.sh
+2. generate_energy_reco.sh copies the file contents of z_291 to all the other depths and updates the parameters of the execution files
+
 Steps taken by the scripts to generate results:
 
 1. Run the GEANT4 simulation in run_simSND.py, for every depth and energy
