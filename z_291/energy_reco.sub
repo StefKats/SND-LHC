@@ -1,0 +1,17 @@
+executable = /afs/cern.ch/user/s/skatsaro/PGsim/z_291/energy_reco.sh
+arguments  = $(ClusterID) $(ProcId)
+output     = output/energy_reco.$(ClusterId).$(ProcId).out
+error      = error/energy_reco.$(ClusterId).$(ProcId).err
+log        = log/energy_reco.$(ClusterId).log
+getenv = False
+notification = Never
+RequestCpus  = 1
+should_transfer_files = NO
+on_exit_remove = (ExitBySignal == False) && (ExitCode == 0)
+max_retries    = 3
+
++JobFlavour  = "microcentury"
++AccountingGroup = "group_u_SNDLHC.users"
+requirements = Machine =!= LastRemoteHost
+queue 1
+
