@@ -5,6 +5,15 @@ In this project, the first procedure for hadronic shower energy and vertex posit
 developed for the SND detector. Shower propagation is profiled using PDFs
 and a log-likelihood function is built to reconstruct energy and vertex. 
 
+Steps to prepare the files:
+
+1. Create all the depth dirs (z_295,z_304,...,z_347) containing the dir e_50 from z_291
+2. For each depth dir create all energy sub dirs (e_50,e_100,...,e_2000)
+3. Make sure each dir and sub-dir has empty folders with the names error, log, output
+4. Run generate_energy_reco.sh with the last line commented out. This will copy the scripts of the z_291 dir.
+5. For each depth dir run generate_PDF.sh to fill the energy dirs, update them and generate the PDFs
+6. Run generate_energy_reco.sh again but with the last line uncommented to run the Energy_reco_code.py and obtain the log-likelihood
+
 Steps to generate the results:
 
 1. Run the GEANT4 simulation in run_simSND.py, for every depth and energy
