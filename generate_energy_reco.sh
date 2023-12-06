@@ -19,6 +19,8 @@ for dir in z_*/; do bash "$dir"update_energy_reco.sh;done # run update script fo
 
 for dir in z_*/; do (cd $dir && bash generate_PDF.sh);done # run update script for all files
 
+for dir in z_*/; do (cd $dir && mkdir error log output);done # make empty error log and output dirs
+
 #(cd /tmp && pwd)
 
 if [ "$userInput" == "y" ];
