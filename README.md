@@ -30,15 +30,6 @@ This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each contai
 3. Run <code>generate_energy_reco.sh</code> once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
 4. Run the reconstruction code in jupyter notebook <code>Depth reco and diagnostics.ipynb</code> (reconstruct the depth for each event)
 
-<!--- 
-1. Create all the depth dirs (z_295,z_304,...,z_347) containing the dir e_50 from z_291
-2. For each depth dir create all energy sub dirs (e_50,e_100,...,e_2000)
-3. Make sure each dir and sub-dir has empty folders with the names error, log, output
-4. Run generate_energy_reco.sh with the last line commented out. This will copy the scripts of the z_291 dir.
-5. For each depth dir run generate_PDF.sh to fill the energy dirs, update them and generate the PDFs
-6. Run generate_energy_reco.sh again but with the last line uncommented to run the Energy_reco_code.py and obtain the log-likelihood 
--->
-
 <h3>Explanation of the scripts</h3>
 
 <b>Steps taken by the scripts to prepare the results:</b>
