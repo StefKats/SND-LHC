@@ -18,21 +18,21 @@ echo $Z
 
 #mkdir -p e_50 e_100 e_200 e_300 e_400 e_500 e_750 e_1000 e_1250 e_1500 e_2000
 
-#for dir in e_*/; do cp -v -r ~/PGsim2/z_$Z/e_50/error $dir;done # copy file to mulitple folders
+#for dir in e_*/; do cp -v -r ~/SND-LHC/z_$Z/e_50/error $dir;done # copy file to mulitple folders
 
-#for dir in e_*/; do cp -v -r ~/PGsim2/z_$Z/e_50/log $dir;done # copy file to mulitple folders
+#for dir in e_*/; do cp -v -r ~/SND-LHC/z_$Z/e_50/log $dir;done # copy file to mulitple folders
 
-#for dir in e_*/; do cp -v -r ~/PGsim2/z_$Z/e_50/output $dir;done # copy file to mulitple folders
+#for dir in e_*/; do cp -v -r ~/SND-LHC/z_$Z/e_50/output $dir;done # copy file to mulitple folders
 
-for dir in e_*/; do cp -v ~/PGsim2/z_$Z/e_50/runPG.sh $dir;done # copy file to mulitple folders
+for dir in e_*/; do cp -v ~/SND-LHC/z_$Z/e_50/runPG.sh $dir;done # copy file to mulitple folders
 
-for dir in e_*/; do cp -v ~/PGsim2/z_$Z/e_50/runPG.sub $dir;done # copy file to mulitple folders
+for dir in e_*/; do cp -v ~/SND-LHC/z_$Z/e_50/runPG.sub $dir;done # copy file to mulitple folders
 
-for dir in e_*/; do cp -v ~/PGsim2/z_$Z/e_50/pythonPDF.sh $dir;done # copy file to mulitple folders
+for dir in e_*/; do cp -v ~/SND-LHC/z_$Z/e_50/pythonPDF.sh $dir;done # copy file to mulitple folders
 
-for dir in e_*/; do cp -v ~/PGsim2/z_$Z/e_50/pythonPDF.sub $dir;done # copy file to mulitple folders
+for dir in e_*/; do cp -v ~/SND-LHC/z_$Z/e_50/pythonPDF.sub $dir;done # copy file to mulitple folders
 
-for dir in e_*/; do cp -v ~/PGsim2/z_$Z/e_50/update_params.sh $dir;done # copy file to mulitple folders
+for dir in e_*/; do cp -v ~/SND-LHC/z_$Z/e_50/update_params.sh $dir;done # copy file to mulitple folders
 
 for dir in e_*/; do bash "$dir"update_params.sh ;done # run update script for all files
 
