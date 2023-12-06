@@ -1,4 +1,4 @@
-echo "recoEnergy? (y/n)"
+echo "recoEnergy: (y/n)"
 read userInput
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
