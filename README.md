@@ -10,6 +10,7 @@ and a log-likelihood function is built to reconstruct energy and vertex.
   <li><b>Energy reco plots (summary reco plots)</b></li>
   <li><b>Energy reco diagnostics (single event energy reco breakdown)</b></li>
   <li><b>Depth reco and diagnostics (full depth reco, summary plots, single event reco breakdown)</b></li>
+  <li><b>Event simulation diagnostics (simulation diagnostic plots)</b></li>
 </ul>
 
 <h3><b>Reproducing the results</b></h3>
