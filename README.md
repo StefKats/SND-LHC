@@ -43,9 +43,9 @@ This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each contai
 
 1. Run the GEANT4 simulation in <code>run_simSND.py</code>, for every depth and energy
 
-2. Run the <code>PDF_python_code.py</code> to use the GEANT4 simulation results and create a PDF for each SciFi station for every depth and energy
+2. Run <code>PDF_python_code.py</code> to use the GEANT4 simulation results and create a PDF for each SciFi station for every depth and energy
 
-3. Run the <code>Energy_reco_code.py</code> which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
+3. Run <code>Energy_reco_code.py</code> which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
 
 (4.) Depth reco needs to be run manually via the jupyter notebook <code>Depth reco and diagnostics.ipynb</code>. The reconstruction code works similarly to the code in <code>Energy_reco_code.py</code>.
 
