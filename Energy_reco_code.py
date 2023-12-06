@@ -58,11 +58,11 @@ for station in range(1,6):
         
 PDFs_x = np.array(PDFs_x)
 
-PDFs_x[PDFs_x==0] = 0.00005
+PDFs_x[PDFs_x==0] += 0.00005
 
 PDFs_y = np.array(PDFs_y)
 
-PDFs_y[PDFs_y==0] = 0.00005
+PDFs_y[PDFs_y==0] += 0.00005
 
 
 t1 = time.perf_counter()
