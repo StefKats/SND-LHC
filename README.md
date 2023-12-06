@@ -30,7 +30,7 @@ This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each contai
 1. Run <code>generate_energy_reco.sh</code> and select "n" to Reco energy, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
 2. Run <code>generate_energy_reco.sh</code> once the condor jobs have finished and select "n" to Reco energy, "n" to runPG and "y" to createPDFs (create the PDFs for each station of each depth and energy)
 3. Run <code>generate_energy_reco.sh</code> once the PDFs have been created and select "y" to Reco energy, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
-4. Run the reconstruction code in jupyter notebook <code>Depth reco and diagnostics.ipynb</code> (reconstruct the depth for each event)
+4. Run the depth reconstruction code in jupyter notebook <code>Depth reco and diagnostics.ipynb</code> (reconstruct the depth for each event)
 
 <h3>Explanation of the scripts</h3>
 
