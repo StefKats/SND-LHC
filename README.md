@@ -8,12 +8,13 @@ and a log-likelihood function is built to reconstruct energy and vertex.
 Steps to prepare the files:
 
 1. Run make_depth_dirs.sh
-2. Run generate_energy_reco.sh, while selecting "n" to runPG and "n" to createPDFs
+2. Run generate_energy_reco.sh, while selecting "n" to submit to condor, "n" to runPG and "n" to createPDFs
 
 Steps to generate results:
 
-1. Run generate_energy_reco.sh and select "y" to runPG and "n" to createPDFs
-2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to runPG and "y" to createPDFs
+1. Run generate_energy_reco.sh and select "n" to submit to condor, "y" to runPG and "n" to createPDFs
+2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs
+3. Run generate_energy_reco.sh once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs
 
 <!--- 
 1. Create all the depth dirs (z_295,z_304,...,z_347) containing the dir e_50 from z_291
