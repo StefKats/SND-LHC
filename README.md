@@ -49,9 +49,3 @@ This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each contai
 
 
 
-
-<!---
-4. Run the Depth_reco_code.py which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each depth at a fixed energy. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed depth.
--->
-
-
