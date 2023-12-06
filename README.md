@@ -1,11 +1,11 @@
 # SND-LHC
-Hadronic shower reconstruction for the SND@LHC experiment
+Hadronic shower reconstruction for the SND@LHC experiment.
 
 In this project, the first procedure for hadronic shower energy and vertex position reconstruction is 
 developed for the SND detector. Shower propagation is profiled using PDFs
 and a log-likelihood function is built to reconstruct energy and vertex. 
 
-<h3><b>Key Jupyter notebooks to obtain final plots:</b></h3>
+<h3><b>Key Jupyter notebooks to obtain final plots (useful summary of the reco process):</b></h3>
 <ul>
   <li><b>Energy reco plots (summary reco plots)</b></li>
   <li><b>Energy reco diagnostics (single event energy reco breakdown)</b></li>
@@ -18,14 +18,14 @@ and a log-likelihood function is built to reconstruct energy and vertex.
 
 <b>Steps to prepare the files:</b>
 
-1. Run make_depth_dirs.sh
-2. Run generate_energy_reco.sh, while selecting "n" to submit to condor, "n" to runPG and "n" to createPDFs
+1. Run <code>make_depth_dirs.sh</code>
+2. Run <code>generate_energy_reco.sh</code>, while selecting "n" to submit to condor, "n" to runPG and "n" to createPDFs
 
 <b>Steps to generate results:</b>
 
-1. Run generate_energy_reco.sh and select "n" to submit to condor, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
-2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs (create the PDFs for each station of each depth and energy)
-3. Run generate_energy_reco.sh once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
+1. Run <code>generate_energy_reco.sh</code> and select "n" to submit to condor, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
+2. Run <code>generate_energy_reco.sh</code> once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs (create the PDFs for each station of each depth and energy)
+3. Run <code>generate_energy_reco.sh</code> once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
 4. Run the reconstruction code in jupyter notebook "Depth reco and diagnostics.ipynb" (reconstruct the depth for each event)
 
 <!--- 
@@ -41,18 +41,18 @@ and a log-likelihood function is built to reconstruct energy and vertex.
 
 <b>Steps taken by the scripts to prepare the results:</b>
 
-1. All the depth dirs are created from make_depth_dirs.sh
-2. generate_energy_reco.sh copies the file contents of z_291 to all the other depths and updates the parameters of the execution files
+1. All the depth dirs are created from <code>make_depth_dirs.sh</code>
+2. <code>generate_energy_reco.sh</code> copies the file contents of z_291 to all the other depths and updates the parameters of the execution files
 
 <b>Steps taken by the scripts to generate results:</b>
 
-1. Run the GEANT4 simulation in run_simSND.py, for every depth and energy
+1. Run the GEANT4 simulation in <code>run_simSND.py</code>, for every depth and energy
 
-2. Run the PDF_python_code.py to use the GEANT4 simulation results and create a PDF for each SciFi station for every depth and energy
+2. Run the <code>PDF_python_code.py</code> to use the GEANT4 simulation results and create a PDF for each SciFi station for every depth and energy
 
-3. Run the Energy_reco_code.py which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
+3. Run the <code>Energy_reco_code.py</code> which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
 
-(4.) Depth reco needs to be run manually via the jupyter notebook "Depth reco and diagnostics.ipynb". The reconstruction code works similarly to the code in Energy_reco_code.py
+(4.) Depth reco needs to be run manually via the jupyter notebook "Depth reco and diagnostics.ipynb". The reconstruction code works similarly to the code in <code>Energy_reco_code.py</code>.
 
 
 
