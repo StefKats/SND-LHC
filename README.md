@@ -15,6 +15,7 @@ Steps to generate results:
 1. Run generate_energy_reco.sh and select "n" to submit to condor, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
 2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs (create the PDFs for each station of each depth and energy)
 3. Run generate_energy_reco.sh once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
+4. Run the reconstruction code in jupyter notebook "Depth reco and diagnostics.ipynb" (reconstruct the depth for each event)
 
 <!--- 
 1. Create all the depth dirs (z_295,z_304,...,z_347) containing the dir e_50 from z_291
@@ -38,6 +39,12 @@ Steps taken by the scripts to generate results:
 
 3. Run the Energy_reco_code.py which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
 
+(4.) Depth reco needs to be run manually via the jupyter notebook "Depth reco and diagnostics.ipynb". The reconstruction code works similarly to the code in Energy_reco_code.py
+
+
+
+<!---
 4. Run the Depth_reco_code.py which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each depth at a fixed energy. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed depth.
+-->
 
 
