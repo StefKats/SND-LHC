@@ -1,4 +1,4 @@
-echo "Submit to condor (y/n)?"
+echo "Reco energy (y/n)?"
 read userInput
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
