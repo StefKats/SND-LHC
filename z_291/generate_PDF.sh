@@ -4,8 +4,8 @@
 #read userInput
 
 
-read -p 'RunPG: (y/n) ' user1
-read -p 'CreatePDFs: (y/n) ' user2
+read -p 'runPG: (y/n) ' user1
+read -p 'createPDFs: (y/n) ' user2
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
