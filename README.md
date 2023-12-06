@@ -12,9 +12,9 @@ Steps to prepare the files:
 
 Steps to generate results:
 
-1. Run generate_energy_reco.sh and select "n" to submit to condor, "y" to runPG and "n" to createPDFs
-2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs
-3. Run generate_energy_reco.sh once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs
+1. Run generate_energy_reco.sh and select "n" to submit to condor, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
+2. Run generate_energy_reco.sh once the condor jobs have finished and select "n" to submit to condor, "n" to runPG and "y" to createPDFs (create the PDFs for each station of each depth and energy)
+3. Run generate_energy_reco.sh once the PDFs have been created and select "y" to submit to condor, "n" to runPG and "n" to createPDFs (reconstruct the energy for each event)
 
 <!--- 
 1. Create all the depth dirs (z_295,z_304,...,z_347) containing the dir e_50 from z_291
