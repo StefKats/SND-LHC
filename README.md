@@ -21,6 +21,8 @@ and a log-likelihood function is built to reconstruct energy and vertex.
 1. Run <code>make_depth_dirs.sh</code>
 2. Run <code>generate_energy_reco.sh</code>, while selecting "n" to submit to condor, "n" to runPG and "n" to createPDFs
 
+This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each containing populated sub-dirs {e_50, e_100,..., e_1500, e_2000}. 
+
 <b>Steps to generate results:</b>
 
 1. Run <code>generate_energy_reco.sh</code> and select "n" to submit to condor, "y" to runPG and "n" to createPDFs (simulate 1000 events per depth and energy)
