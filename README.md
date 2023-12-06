@@ -47,7 +47,7 @@ This should produce populated dirs {z_291, z_295,..., z_343, z_347}, each contai
 
 3. Run <code>Energy_reco_code.py</code> which takes individual events and performs a log-likelihood scan over all the SciFi PDFs for each energy and a fixed depth. For each scan, the log-likelihood is summed over all 5 SciFi stations. The maximum of the log-likelihood corresponds to the reconstructed energy.
 
-(4.) Depth reco needs to be run manually via the jupyter notebook <code>Depth reco and diagnostics.ipynb</code>. The reconstruction code works similarly to the code in <code>Energy_reco_code.py</code>.
+(4.) Depth reco needs to be run manually via the jupyter notebook <code>Depth reco and diagnostics.ipynb</code>. The depth reconstruction code works similarly to the code in <code>Energy_reco_code.py</code>.
 
 
 
