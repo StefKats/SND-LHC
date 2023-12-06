@@ -5,9 +5,10 @@ In this project, the first procedure for hadronic shower energy and vertex posit
 developed for the SND detector. Shower propagation is profiled using PDFs
 and a log-likelihood function is built to reconstruct energy and vertex. 
 
+To reproduce the results you need to have all the files from this repository
+
 Steps to prepare the files:
 
-0. Need to have all the files from this repository
 1. Run make_depth_dirs.sh
 2. Run generate_energy_reco.sh, while selecting "n" to submit to condor, "n" to runPG and "n" to createPDFs
 
